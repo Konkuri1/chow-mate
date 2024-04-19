@@ -11,7 +11,7 @@ userSchema.statics.signup=async function(userName,email,password){
     //check if email exists
     const emailExists=await this.findOne({email})
     if(emailExists){
-        throw new Error("email already go home")
+        throw new Error("email already exist")
     }
     else{
         //hash password
