@@ -3,6 +3,18 @@ import PlaceholderImage from "../../assets/images/Fried-Chicken.jpg";
 import BurgerImage from "../../assets/images/Burger.jpg";
 import PizzaImage from "../../assets/images/Pizza.jpg";
 import SandwichImage from "../../assets/images/Sandwich.jpg";
+import SteakDinner from  "../../assets/images/Steak Dinner.jpg";
+import SpaghettiCarbonara from "../../assets/images/Spaghetti Carbonara.jpg";
+import FreshCatchSeafood from "../../assets/images/Fresh Catch Seafood.jpg";
+import MediterraneanGrill from "../../assets/images/Mediterranean Grill.jpg";
+import DeliciousDelights from "../../assets/images/Delicious Delights.jpg";
+import SpiceHouse from "../../assets/images/Spice House.jpeg";
+import MexicanFiesta from "../../assets/images/Mexican Fiesta.jpg";
+import AsianFusion from "../../assets/images/Asian Fusion.jpg";
+import SizzlingSteaks from "../../assets/images/Sizzling Steaks.jpg";
+import CaféParis from "../../assets/images/Café Paris.jpg";
+
+
 
 const RestaurantMenu = ({ onPlaceOrder }) => {
   const restaurants = [
@@ -11,9 +23,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.7,
       contact: "+123-456-7890",
       location: "123 Main St, City",
-      image: PlaceholderImage,
+      image: DeliciousDelights,
       menu: [
-        { itemName: "Classic Burger", price: 10, image: BurgerImage },
+        { itemName: "Classic Burger", price: 10, image: DeliciousDelights },
         { itemName: "Margherita Pizza", price: 12, image: PizzaImage },
         {
           itemName: "Grilled Chicken Sandwich",
@@ -27,9 +39,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.2,
       contact: "+123-456-7890",
       location: "456 Elm St, Town",
-      image: PlaceholderImage,
+      image: SteakDinner,
       menu: [
-        { itemName: "Steak Dinner", price: 20, image: SandwichImage },
+        { itemName: "Steak Dinner", price: 20, image: SteakDinner },
         { itemName: "Vegetarian Pasta", price: 15, image: SandwichImage },
         { itemName: "Sushi Platter", price: 18, image: SandwichImage },
       ],
@@ -39,9 +51,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.5,
       contact: "+123-456-7890",
       location: "789 Oak St, Village",
-      image: PlaceholderImage,
+      image: SpiceHouse,
       menu: [
-        { itemName: "Chicken Curry", price: 14, image: SandwichImage },
+        { itemName: "Chicken Curry", price: 14, image: SpiceHouse },
         { itemName: "Beef Biryani", price: 16, image: SandwichImage },
         { itemName: "Paneer Tikka", price: 12, image: SandwichImage },
       ],
@@ -52,9 +64,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.8,
       contact: "+123-456-7890",
       location: "321 Pine St, Suburb",
-      image: PlaceholderImage,
+      image: SizzlingSteaks,
       menu: [
-        { itemName: "Filet Mignon", price: 25, image: SandwichImage },
+        { itemName: "Filet Mignon", price: 25, image: SizzlingSteaks },
         { itemName: "BBQ Ribs", price: 18, image: SandwichImage },
         { itemName: "Salmon Fillet", price: 20, image: SandwichImage },
       ],
@@ -64,9 +76,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.6,
       contact: "+123-456-7890",
       location: "567 Maple Ave, Downtown",
-      image: PlaceholderImage,
+      image: CaféParis,
       menu: [
-        { itemName: "Croissant", price: 5, image: SandwichImage },
+        { itemName: "Croissant", price: 5, image: CaféParis},
         { itemName: "Quiche Lorraine", price: 8, image: SandwichImage },
         { itemName: "Eclair", price: 4, image: SandwichImage },
       ],
@@ -76,9 +88,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.4,
       contact: "+123-456-7890",
       location: "890 Cedar Rd, Beachside",
-      image: PlaceholderImage,
+      image:  MexicanFiesta,
       menu: [
-        { itemName: "Tacos", price: 10, image: SandwichImage },
+        { itemName: "Tacos", price: 10, image:  MexicanFiesta},
         { itemName: "Burrito Bowl", price: 12, image: SandwichImage },
         { itemName: "Enchiladas", price: 14, image: SandwichImage },
       ],
@@ -88,9 +100,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.9,
       contact: "+123-456-7890",
       location: "753 Oakwood Dr, Coastal",
-      image: PlaceholderImage,
+      image: FreshCatchSeafood,
       menu: [
-        { itemName: "Lobster Tail", price: 30, image: SandwichImage },
+        { itemName: "Lobster Tail", price: 30, image: FreshCatchSeafood },
         { itemName: "Shrimp Scampi", price: 22, image: SandwichImage },
         { itemName: "Crab Cakes", price: 18, image: SandwichImage },
       ],
@@ -100,9 +112,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.3,
       contact: "+123-456-7890",
       location: "345 Elmwood Ave, Old Town",
-      image: PlaceholderImage,
+      image: SpaghettiCarbonara,
       menu: [
-        { itemName: "Spaghetti Carbonara", price: 15, image: SandwichImage },
+        { itemName: "Spaghetti Carbonara", price: 15, image: SpaghettiCarbonara },
         { itemName: "Margherita Pizza", price: 12, image: SandwichImage },
         { itemName: "Tiramisu", price: 8, image: SandwichImage },
       ],
@@ -112,9 +124,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.7,
       contact: "+123-456-7890",
       location: "678 Birch Ln, Chinatown",
-      image: PlaceholderImage,
+      image: AsianFusion,
       menu: [
-        { itemName: "Pad Thai", price: 12, image: SandwichImage },
+        { itemName: "Pad Thai", price: 12, image: AsianFusion },
         { itemName: "Sushi Rolls", price: 16, image: SandwichImage },
         { itemName: "General Tso's Chicken", price: 14, image: SandwichImage },
       ],
@@ -124,9 +136,9 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       rating: 4.5,
       contact: "+123-456-7890",
       location: "901 Pinecrest Rd, Hillside",
-      image: PlaceholderImage,
+      image: MediterraneanGrill,
       menu: [
-        { itemName: "Falafel Plate", price: 12, image: SandwichImage },
+        { itemName: "Falafel Plate", price: 12, image: MediterraneanGrill },
         { itemName: "Chicken Shawarma", price: 14, image: SandwichImage },
         { itemName: "Greek Salad", price: 10, image: SandwichImage },
       ],
