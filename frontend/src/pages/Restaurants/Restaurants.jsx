@@ -13,6 +13,18 @@ import MexicanFiesta from "../../assets/images/Mexican Fiesta.jpg";
 import AsianFusion from "../../assets/images/Asian Fusion.jpg";
 import SizzlingSteaks from "../../assets/images/Sizzling Steaks.jpg";
 import CaféParis from "../../assets/images/Café Paris.jpg";
+import BeefBiryani from "../../assets/images/Beef Biryani.jpeg";
+import PaneerTikka from "../../assets/images/Paneer Tikka.jpg"
+import VegetarianPasta from "../../assets/images/Vegetarian Pasta.jpg"
+import SushiPlatter from "../../assets/images/Sushi Platter.jpeg"
+import MargheritaPizza from "../../assets/images/Margherita Pizza.jpg"
+import GrilledChickenSandwich from "../../assets/images/Grilled Chicken Sandwich.jpeg"
+import GreekSalad from "../../assets/images/Greek Salad.jpg"
+import ChickenShawarma from "../../assets/images/Chicken Shawarma.jpeg"
+import BBQRibs from "../../assets/images/BBQ Ribs.jpeg"
+import SalmonFillet from "../../assets/images/Salmon Fillet.jpg"
+import QuicheLorraine from "../../assets/images/Quiche Lorraine.jpeg"
+import search from "../../assets/images/search-icon.svg"
 
 
 
@@ -26,11 +38,11 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       image: DeliciousDelights,
       menu: [
         { itemName: "Classic Burger", price: 10, image: DeliciousDelights },
-        { itemName: "Margherita Pizza", price: 12, image: PizzaImage },
+        { itemName: "Margherita Pizza", price: 12, image:MargheritaPizza },
         {
           itemName: "Grilled Chicken Sandwich",
           price: 9,
-          image: SandwichImage,
+          image: GrilledChickenSandwich,
         },
       ],
     },
@@ -42,8 +54,8 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       image: SteakDinner,
       menu: [
         { itemName: "Steak Dinner", price: 20, image: SteakDinner },
-        { itemName: "Vegetarian Pasta", price: 15, image: SandwichImage },
-        { itemName: "Sushi Platter", price: 18, image: SandwichImage },
+        { itemName: "Vegetarian Pasta", price: 15, image: VegetarianPasta },
+        { itemName: "Sushi Platter", price: 18, image: SushiPlatter },
       ],
     },
     {
@@ -54,8 +66,8 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       image: SpiceHouse,
       menu: [
         { itemName: "Chicken Curry", price: 14, image: SpiceHouse },
-        { itemName: "Beef Biryani", price: 16, image: SandwichImage },
-        { itemName: "Paneer Tikka", price: 12, image: SandwichImage },
+        { itemName: "Beef Biryani", price: 16, image: BeefBiryani},
+        { itemName: "Paneer Tikka", price: 12, image: PaneerTikka },
       ],
     },
 
@@ -67,8 +79,8 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       image: SizzlingSteaks,
       menu: [
         { itemName: "Filet Mignon", price: 25, image: SizzlingSteaks },
-        { itemName: "BBQ Ribs", price: 18, image: SandwichImage },
-        { itemName: "Salmon Fillet", price: 20, image: SandwichImage },
+        { itemName: "BBQ Ribs", price: 18, image: BBQRibs },
+        { itemName: "Salmon Fillet", price: 20, image: SalmonFillet },
       ],
     },
     {
@@ -79,7 +91,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       image: CaféParis,
       menu: [
         { itemName: "Croissant", price: 5, image: CaféParis},
-        { itemName: "Quiche Lorraine", price: 8, image: SandwichImage },
+        { itemName: "Quiche Lorraine", price: 8, image: QuicheLorraine },
         { itemName: "Eclair", price: 4, image: SandwichImage },
       ],
     },
@@ -139,8 +151,8 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       image: MediterraneanGrill,
       menu: [
         { itemName: "Falafel Plate", price: 12, image: MediterraneanGrill },
-        { itemName: "Chicken Shawarma", price: 14, image: SandwichImage },
-        { itemName: "Greek Salad", price: 10, image: SandwichImage },
+        { itemName: "Chicken Shawarma", price: 14, image: ChickenShawarma },
+        { itemName: "Greek Salad", price: 10, image: GreekSalad },
       ],
     },
   ];
@@ -189,6 +201,8 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       <h1 className="text-3xl font-bold text-center mt-8 mb-8">
         Available Restaurants
       </h1>
+      <div className=" max-w-lg flex mx-auto items-center mb-2"> <input type="text" placeholder="Search" className=" w-full p-2  border rounded"/><img src={search} alt="search" className="h-12"/></div>
+     
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {restaurants.map((restaurant, index) => (
           <div

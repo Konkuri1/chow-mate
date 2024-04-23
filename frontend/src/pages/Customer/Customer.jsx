@@ -45,7 +45,7 @@ const Customer = () => {
       location: "123 Main St, City",
       rating: 4.7,
       contact: "+1234567890",
-      image: "https://via.placeholder.com/400x200"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-x3AutsroPl86GkrYyJU1El7H3zAWS7l3LE85wLYEng&s"
     },
     {
       name: "Tasty Treats",
@@ -53,7 +53,7 @@ const Customer = () => {
       location: "456 Oak Ave, Town",
       rating: 4.5,
       contact: "+1234567890",
-      image: "https://via.placeholder.com/400x200"
+      image: "https://tb-static.uber.com/prod/image-proc/processed_images/15f211764399bd5c360dfa0762999628/c73ecc27d2a9eaa735b1ee95304ba588.jpeg"
     },
     {
       name: "Gourmet Grills",
@@ -61,7 +61,7 @@ const Customer = () => {
       location: "789 Elm St, Village",
       rating: 4.8,
       contact: "+1234567890",
-      image: "https://via.placeholder.com/400x200"
+      image: "https://m.media-amazon.com/images/I/81qvrOwMnuS._AC_UF350,350_QL80_.jpg"
     }
   ];
 

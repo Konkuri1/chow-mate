@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors"
 import mongoose from "mongoose";
-import addUserRoute from "./routes/user.routes.js"
-import restaurantRoute from "./routes/restaurant.route.js"
-import orderRoute from "./routes/order.routes.js"
-import menuRoute from "./routes/menu.routes.js"
+import addUserRoute from "./routes/user.routes.js";
+import restaurantRoute from "./routes/restaurant.route.js";
+import orderRoute from "./routes/order.routes.js";
+import menuRoute from "./routes/menu.routes.js";
 
 const PORT=process.env.PORT
 

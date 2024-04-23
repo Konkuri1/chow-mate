@@ -20,6 +20,8 @@ const PlaceOrderForm = ({ onClose }) => {
     // Add your logic to handle form submission here
     console.log(formData);
     onClose();
+    // Show success message
+    alert('Order placed successfully!');
   };
 
   return (
@@ -130,13 +132,13 @@ const PlaceOrderForm = ({ onClose }) => {
         </div>
         <div className="flex items-center justify-between">
           <button
-            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full sm:w-auto"
             type="submit"
           >
             Place Order
           </button>
           <button
-            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full sm:w-auto mt-4 sm:mt-0"
             type="button"
             onClick={onClose}
           >
