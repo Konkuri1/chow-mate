@@ -184,6 +184,22 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
     }
   };
 
+  const handleSelectItemMinus = (item) => {
+    const existingItem = selectedItems.find(
+      (selectedItem) => selectedItem.itemName === item.itemName
+    );
+    if (existingItem) {
+      const updatedItems = selectedItems.map((selectedItem) =>
+        selectedItem.itemName === item.itemName
+          ? { ...selectedItem, quantity: selectedItem.quantity - 1 }
+          : selectedItem
+      );
+      setSelectedItems(updatedItems);
+    } else {
+      setSelectedItems([...selectedItems, { ...item, quantity: 1 }]);
+    }
+  };
+
   const handlePlaceOrder = () => {
     onPlaceOrder(selectedItems);
     setShowModal(false);
@@ -252,7 +268,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
                   </div>
                   <div className="flex items-center">
                     <button
-                      onClick={() => handleSelectItem(item)}
+                      onClick={() => handleSelectItemMinus(item)}
                       className="bg-red-500 text-white px-3 py-1 rounded-l"
                     >
                       -

@@ -60,19 +60,64 @@ const RestaurantOwnerDashboard = () => {
   };
 
   return (
-    <div>
+    <>
+    <h2 className='text-center font-semibold p-2 underline underline-offset-4'>Fill the form below to add your restaurant</h2>
+    <div className='mx-auto p-5 flex items-center justify-center max-w-lg'>
       {/* Form to add a new restaurant */}
       <form onSubmit={handleSubmit}>
         <input
+        className='border rounded p-2 w-full'
           type="text"
-          name="restaurantName"
+          name="resname"
           value={formData.restaurantName}
           onChange={handleFormChange}
           placeholder="Restaurant Name"
           required
         />
+        <input
+        className='border rounded p-2 w-full mt-2'
+          type="text"
+          name="location"
+          value={formData.restaurantName}
+          onChange={handleFormChange}
+          placeholder="Location"
+          required
+        />
+        <input
+        className='border rounded p-2 w-full mt-2'
+          type="text"
+          name="menu"
+          value={formData.restaurantName}
+          onChange={handleFormChange}
+          placeholder="Add menu"
+          required
+        />
+        <input
+        className='border rounded p-2 w-full mt-2'
+          type="tel"
+          name="contact"
+          value={formData.restaurantName}
+          onChange={handleFormChange}
+          placeholder="Contact"
+          required
+        />
+        <input
+        className='border rounded p-2 w-full mt-2'
+          type="email"
+          name="email"
+          value={formData.restaurantName}
+          onChange={handleFormChange}
+          placeholder="Email address"
+          required
+        />
+        <input
+        className='border rounded p-2 w-full mt-2'
+          type="file"
+          name="image"
+          required
+        />
         {/* Add more input fields for other restaurant details */}
-        <button type="submit">Create Restaurant</button>
+        <button type="submit" className='rounded p-2 font-semibold bg-red-500 text-white mt-2'>Create Restaurant</button>
       </form>
 
       {/* List of existing restaurants */}
@@ -85,7 +130,7 @@ const RestaurantOwnerDashboard = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </div></>
   );
 };
 
