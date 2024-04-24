@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors"
 import mongoose from "mongoose";
-import addUserRoute from "./routes/user.routes.js"
+import userRoutes from "./routes/user.routes.js"
 import restaurantRoute from "./routes/restaurant.route.js"
 import orderRoute from "./routes/order.routes.js"
 import menuRoute from "./routes/menu.routes.js"
@@ -19,7 +19,7 @@ app.use(express.json())
 
 
 //use routes
-app.use("/user",addUserRoute)
+app.use("/user",userRoutes)
 app.use("/restaurant",restaurantRoute)
 app.use("/order",orderRoute)
 app.use("/menu",menuRoute)

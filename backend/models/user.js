@@ -7,20 +7,9 @@ const userSchema = new Schema({
   password: { type: String, required: true },
 });
 
-userSchema.statics.signup=async function(userName,email,password){
-    //check if email exists
-    const emailExists=await this.findOne({email})
-    if(emailExists){
-        throw new Error("email already exist")
-    }
-    else{
-        //hash password
-        const salt=await bcrypt.genSalt(10)
-        const hash=await bcrypt.hash(password,salt)
-        const user=await this.create({userName,email,password:hash})
-        return user
-    }
-
-}
+userSchema.pre("save", async function () {
+    const saltRounds = 12;
+    this.password = await bcrypt.hash(this.password, saltRounds);
+  });
 
 export const User = model("User", userSchema, "user");
