@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PlaceOrderForm = ({ onClose }) => {
+const PlaceOrderForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,7 +19,7 @@ const PlaceOrderForm = ({ onClose }) => {
     e.preventDefault();
     // Add your logic to handle form submission here
     console.log(formData);
-    onClose();
+    handleChange(e)
     // Show success message
     alert('Order placed successfully!');
   };
@@ -140,7 +140,7 @@ const PlaceOrderForm = ({ onClose }) => {
           <button
             className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full sm:w-auto mt-4 sm:mt-0"
             type="button"
-            onClick={onClose}
+            onClick={handleSubmit}
           >
             Cancel
           </button>

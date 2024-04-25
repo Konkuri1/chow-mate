@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PlaceholderImage from "../../assets/images/Fried-Chicken.jpg";
-import BurgerImage from "../../assets/images/Burger.jpg";
-import PizzaImage from "../../assets/images/Pizza.jpg";
+// import PlaceholderImage from "../../assets/images/Fried-Chicken.jpg";
+// import BurgerImage from "../../assets/images/Burger.jpg";
+// import PizzaImage from "../../assets/images/Pizza.jpg";
 import SandwichImage from "../../assets/images/Sandwich.jpg";
 import SteakDinner from  "../../assets/images/Steak Dinner.jpg";
 import SpaghettiCarbonara from "../../assets/images/Spaghetti Carbonara.jpg";
