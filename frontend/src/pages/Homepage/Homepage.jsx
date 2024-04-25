@@ -25,6 +25,7 @@ import BBQRibs from "../../assets/images/BBQ Ribs.jpeg"
 import SalmonFillet from "../../assets/images/Salmon Fillet.jpg"
 import QuicheLorraine from "../../assets/images/Quiche Lorraine.jpeg"
 
+
 const Homepage = ({ onPlaceOrder }) => {
   const restaurants = [
     {
@@ -212,8 +213,23 @@ const Homepage = ({ onPlaceOrder }) => {
 
   return (
     <div>
+       <div className="bg-white font-semi-bold py-20 px-4 sm:px-6 lg:px-8 h-[90vh] bg-cover" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"}}>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-black mb-4">
+              Discover Your Favorite Cuisines
+            </h1>
+            <p className="text-lg text-white mb-8">
+             Get Hooked with the Finest Restaurants Around You.
+            </p>
+            <button className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 focus:outline-none focus:bg-red-700">
+              Find Restaurants
+            </button>
+          </div>
+        </div>
+      </div>
       <h1 className="text-3xl font-bold text-center mt-8 mb-8">
-        Available Restaurants
+       Popular Restaurants
       </h1>
       {/* <div className=" max-w-lg flex mx-auto items-center mb-2"> <input type="text" placeholder="Search" className=" w-full p-2  border rounded"/><img src={search} alt="search" className="h-12"/></div> */}
      
@@ -306,9 +322,45 @@ const Homepage = ({ onPlaceOrder }) => {
                 Place Order
               </button>
             </div>
+            
           </div>
+
+          <div className="container mx-auto py-8">
+        <h2 className="text-2xl font-bold text-white mb-4">
+          Quick and Affordable Lunches
+        </h2>
+      </div>
         </div>
       )}
+
+      <div className="bg-gray-100 py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-800 mb-8">
+            Customer Reviews
+          </h2>
+
+          <div className="flex justify-center items-center space-x-8">
+            <div className="bg-white p-6 rounded-md shadow-md w-96">
+              <p className="text-gray-800 mb-4">
+                "Great food and excellent service. Highly recommended!"
+              </p>
+              <p className="text-gray-600">- Liana</p>
+            </div>
+            <div className="bg-white p-6 rounded-md shadow-md w-96">
+              <p className="text-gray-800 mb-4">
+                "The best pizza in town! Will definitely come back."
+              </p>
+              <p className="text-gray-600">- MickyMond</p>
+            </div>
+            <div className="bg-white p-6 rounded-md shadow-md w-96">
+              <p className="text-gray-800 mb-4">
+                "I'm glad to have discovered you. The best place for my favourite meals."
+              </p>
+              <p className="text-gray-600">- Theody</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

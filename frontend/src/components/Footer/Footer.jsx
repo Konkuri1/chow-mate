@@ -72,7 +72,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-gray-400 mt-4">
-          © 2024 Virtual Restaurants. All rights reserved.
+          © 2024 Chow Buddy. All rights reserved.
         </p>
       </div>
     </footer>
