@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [userType, setUserType] = useState("");
@@ -99,12 +100,21 @@ const Register = () => {
           </div>
 
           <div>
-            <button
+
+            {userType && userType === 'restaurant_owner'? (
+              <Link to="/restaurant-owner-dashboard"
               type="submit"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
               Create Account
-            </button>
+            </Link>
+            ): <Link to="/login"
+            type="submit"
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+          >
+            Create Account
+          </Link>}
+          
           </div>
         </form>
       </div>

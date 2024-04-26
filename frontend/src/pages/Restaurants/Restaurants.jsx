@@ -34,7 +34,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Delicious Delights",
       rating: 4.7,
       contact: "+123-456-7890",
-      location: "123 Main St, City",
+      location: "East Legon",
       image: DeliciousDelights,
       menu: [
         { itemName: "Classic Burger", price: 10, image: DeliciousDelights },
@@ -47,10 +47,22 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       ],
     },
     {
-      name: "Tasty Treats",
+      name: "Quiche Lorraine",
       rating: 4.2,
       contact: "+123-456-7890",
-      location: "456 Elm St, Town",
+      location: "Cantonments",
+      image: QuicheLorraine,
+      menu: [
+        { itemName: "Steak Dinner", price: 20, image: QuicheLorraine},
+        { itemName: "Vegetarian Pasta", price: 15, image: VegetarianPasta },
+        { itemName: "Sushi Platter", price: 18, image: SushiPlatter },
+      ],
+    },
+    {
+      name: "Steak Dinner",
+      rating: 4.2,
+      contact: "+123-456-7890",
+      location: "Cantonments",
       image: SteakDinner,
       menu: [
         { itemName: "Steak Dinner", price: 20, image: SteakDinner },
@@ -59,10 +71,22 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       ],
     },
     {
+      name: "Spaghetti Carbonara",
+      rating: 4.2,
+      contact: "+123-456-7890",
+      location: "Cantonments",
+      image: SpaghettiCarbonara,
+      menu: [
+        { itemName: "Steak Dinner", price: 20, image: SpaghettiCarbonara },
+        { itemName: "Vegetarian Pasta", price: 15, image: VegetarianPasta },
+        { itemName: "Sushi Platter", price: 18, image: SushiPlatter },
+      ],
+    },
+    {
       name: "Spice House",
       rating: 4.5,
       contact: "+123-456-7890",
-      location: "789 Oak St, Village",
+      location: "Achimota",
       image: SpiceHouse,
       menu: [
         { itemName: "Chicken Curry", price: 14, image: SpiceHouse },
@@ -75,7 +99,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Sizzling Steaks",
       rating: 4.8,
       contact: "+123-456-7890",
-      location: "321 Pine St, Suburb",
+      location: "Cirlce",
       image: SizzlingSteaks,
       menu: [
         { itemName: "Filet Mignon", price: 25, image: SizzlingSteaks },
@@ -87,7 +111,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Café Paris",
       rating: 4.6,
       contact: "+123-456-7890",
-      location: "567 Maple Ave, Downtown",
+      location: "East Legon",
       image: CaféParis,
       menu: [
         { itemName: "Croissant", price: 5, image: CaféParis},
@@ -99,7 +123,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Mexican Fiesta",
       rating: 4.4,
       contact: "+123-456-7890",
-      location: "890 Cedar Rd, Beachside",
+      location: "Cantonments",
       image:  MexicanFiesta,
       menu: [
         { itemName: "Tacos", price: 10, image:  MexicanFiesta},
@@ -111,7 +135,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Fresh Catch Seafood",
       rating: 4.9,
       contact: "+123-456-7890",
-      location: "753 Oakwood Dr, Coastal",
+      location: "Achimota",
       image: FreshCatchSeafood,
       menu: [
         { itemName: "Lobster Tail", price: 30, image: FreshCatchSeafood },
@@ -123,7 +147,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Italian Trattoria",
       rating: 4.3,
       contact: "+123-456-7890",
-      location: "345 Elmwood Ave, Old Town",
+      location: "Circle",
       image: SpaghettiCarbonara,
       menu: [
         { itemName: "Spaghetti Carbonara", price: 15, image: SpaghettiCarbonara },
@@ -135,7 +159,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Asian Fusion",
       rating: 4.7,
       contact: "+123-456-7890",
-      location: "678 Birch Ln, Chinatown",
+      location: "East Legon",
       image: AsianFusion,
       menu: [
         { itemName: "Pad Thai", price: 12, image: AsianFusion },
@@ -147,7 +171,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       name: "Mediterranean Grill",
       rating: 4.5,
       contact: "+123-456-7890",
-      location: "901 Pinecrest Rd, Hillside",
+      location: "Cantonments",
       image: MediterraneanGrill,
       menu: [
         { itemName: "Falafel Plate", price: 12, image: MediterraneanGrill },

@@ -24,6 +24,7 @@ import ChickenShawarma from "../../assets/images/Chicken Shawarma.jpeg"
 import BBQRibs from "../../assets/images/BBQ Ribs.jpeg"
 import SalmonFillet from "../../assets/images/Salmon Fillet.jpg"
 import QuicheLorraine from "../../assets/images/Quiche Lorraine.jpeg"
+import { Link } from "react-router-dom";
 
 
 const Homepage = ({ onPlaceOrder }) => {
@@ -45,7 +46,7 @@ const Homepage = ({ onPlaceOrder }) => {
       ],
     },
     {
-      name: "Tasty Treats",
+      name: "Steak Dinner",
       rating: 4.2,
       contact: "+123-456-7890",
       location: "456 Elm St, Town",
@@ -216,15 +217,17 @@ const Homepage = ({ onPlaceOrder }) => {
        <div className="bg-white font-semi-bold py-20 px-4 sm:px-6 lg:px-8 h-[90vh] bg-cover" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"}}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-black mb-4">
+            <h1 className="text-6xl font-bold text-white mb-4">
               Discover Your Favorite Cuisines
             </h1>
-            <p className="text-lg text-white mb-8">
+            <p className="text-2xl text-white mb-8">
              Get Hooked with the Finest Restaurants Around You.
             </p>
-            <button className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 focus:outline-none focus:bg-red-700">
-              Find Restaurants
+            <Link to='/restaurant'>
+            <button className="bg-red-600 text-white px-6 py-3 mx-48 rounded-md hover:bg-red-700 focus:outline-none focus:bg-red-700">
+              Find Restaurants 
             </button>
+            </Link>
           </div>
         </div>
       </div>

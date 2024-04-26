@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import img from "../../assets/images/Sign-in.svg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -96,12 +97,14 @@ const Login = () => {
           </div>
 
           <div>
+            <Link to= '/'>
             <button
               type="submit"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
               Sign in
             </button>
+            </Link>
           </div>
         </form>
       </div>
