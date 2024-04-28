@@ -10,17 +10,17 @@ const Navbar = () => {
           <div>
             <ul className="flex space-x-4">
             <li>
-  <Link to="/" className="bg-white rounded-lg text-red-700 p-1 hover:text-black">
+  <Link to="/" className="text-white p-1 hover:text-black">
     Home
   </Link>
 </li>
             
 <li> 
-      <Link to="/restaurant" className="bg-white rounded-lg text-red-700 p-1 hover:text-black">
+      <Link to="/restaurant" className="text-white p-1 hover:text-black">
           Order Now
             </Link></li>
 <li> 
-      <Link to="/register" className="bg-white rounded-lg text-red-700 p-1 hover:text-black">
+      <Link to="/register" className="text-white p-1 hover:text-black">
           Register
             </Link></li>
 <li> 

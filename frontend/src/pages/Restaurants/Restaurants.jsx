@@ -243,7 +243,7 @@ const RestaurantMenu = ({ onPlaceOrder }) => {
       </h1>
       <div className=" max-w-lg flex mx-auto items-center mb-2"> <input type="text" placeholder="Search" className=" w-full p-2  border rounded"/><img src={search} alt="search" className="h-12"/></div>
      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-7 lg:grid-cols-4 gap-8">
         {restaurants.map((restaurant, index) => (
           <div
             key={index}
