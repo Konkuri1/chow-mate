@@ -23,7 +23,7 @@ const Footer = () => {
           </nav>
         </div>
         <p className="text-gray-400 mt-4">
-          © 2024 Chow Buddy. All rights reserved.
+          © 2024 ChowBuddy Inc. All rights reserved.
         </p>
       </div>
     </footer>
